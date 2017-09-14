@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	../pyconngavi/settings.py	/^ALLOWED_HOSTS = []$/;"	kind:variable	line:28
+AUTH_PASSWORD_VALIDATORS	../pyconngavi/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	kind:variable	line:87
+BASE_DIR	../pyconngavi/settings.py	/^BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))$/;"	kind:variable	line:16
+DATABASES	../pyconngavi/settings.py	/^DATABASES = {$/;"	kind:variable	line:76
+DEBUG	../pyconngavi/settings.py	/^DEBUG = True$/;"	kind:variable	line:26
+INSTALLED_APPS	../pyconngavi/settings.py	/^INSTALLED_APPS = [$/;"	kind:variable	line:33
+LANGUAGE_CODE	../pyconngavi/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	kind:variable	line:106
+MIDDLEWARE	../pyconngavi/settings.py	/^MIDDLEWARE = [$/;"	kind:variable	line:42
+ROOT_URLCONF	../pyconngavi/settings.py	/^ROOT_URLCONF = 'pyconngavi.urls'$/;"	kind:variable	line:52
+SECRET_KEY	../pyconngavi/settings.py	/^SECRET_KEY = '33%a-&ri8m2y$iux4gt3@75v80#uo2k4l+!*k@isp(bux*8=o8'$/;"	kind:variable	line:23
+STATIC_URL	../pyconngavi/settings.py	/^STATIC_URL = '\/static\/'$/;"	kind:variable	line:120
+TEMPLATES	../pyconngavi/settings.py	/^TEMPLATES = [$/;"	kind:variable	line:54
+TIME_ZONE	../pyconngavi/settings.py	/^TIME_ZONE = 'UTC'$/;"	kind:variable	line:108
+USE_I18N	../pyconngavi/settings.py	/^USE_I18N = True$/;"	kind:variable	line:110
+USE_L10N	../pyconngavi/settings.py	/^USE_L10N = True$/;"	kind:variable	line:112
+USE_TZ	../pyconngavi/settings.py	/^USE_TZ = True$/;"	kind:variable	line:114
+WSGI_APPLICATION	../pyconngavi/settings.py	/^WSGI_APPLICATION = 'pyconngavi.wsgi.application'$/;"	kind:variable	line:70
+__init__.py	../pyconngavi/__init__.py	1;"	kind:file	line:1
+application	../pyconngavi/wsgi.py	/^application = get_wsgi_application()$/;"	kind:variable	line:16
+manage.py	../manage.py	1;"	kind:file	line:1
+settings.py	../pyconngavi/settings.py	1;"	kind:file	line:1
+urlpatterns	../pyconngavi/urls.py	/^urlpatterns = [$/;"	kind:variable	line:19
+urls.py	../pyconngavi/urls.py	1;"	kind:file	line:1
+wsgi.py	../pyconngavi/wsgi.py	1;"	kind:file	line:1
