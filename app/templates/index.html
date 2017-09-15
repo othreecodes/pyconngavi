@@ -62,8 +62,11 @@
     <div class="container">
         <h1 class="page-header">Create your PyConNG AVIs</h1>
         <br />
+        {% if error%}
+        <p class="alert alert-danger">Oops! an error occured. Did you add an image?</p>
+        {%endif%}
         <div class="row">
-
+            
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="row">
@@ -95,7 +98,7 @@
                             <button type="button" class="btn btn-default image-preview-clear" style="display:none;"> <span class="glyphicon glyphicon-remove"></span>                                Clear </button>
                                 <!-- image-preview-input -->
                                 <div class="btn btn-default image-preview-input"> <span class="glyphicon glyphicon-folder-open"></span> <span class="image-preview-input-title">Browse</span>
-                                    <input type="file" class='form-control' accept="image/png, image/jpeg, image/gif" name="file" />
+                                    <input type="file" class='form-control' accept="image/png, image/jpeg, image/gif" name="file" required/>
                                     <!-- rename it -->
                                 </div>
                                 {% comment %} <button type="submit" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button> {% endcomment %}
