@@ -46,19 +46,16 @@
         }
 
         .image-preview-input input[type=file] {
-            position: absolute;
+             
             top: 0;
             right: 0;
             margin: 0;
             padding: 0;
             font-size: 20px;
             cursor: pointer;
-            opacity: 0;
+            /**opacity: 0;
             filter: alpha(opacity=0);
-        }
-
-        .image-preview-input-title {
-            margin-left: 2px;
+            **/
         }
     </style>
 
@@ -70,16 +67,16 @@
             <div class="col-md-12">
                 <div class="panel panel-default">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
                             <img class="img-responsive" src={%static "hello.png" %} />
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
                             <img class="img-responsive" src={%static "hello4.png" %} />
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
                             <img class="img-responsive" src={%static "hello2.png" %} />
                         </div>
-                        <div class="col-md-3 col-sm-6">
+                        <div class="col-md-3 col-sm-6 col-xs-6">
                             <img class="img-responsive" src={%static "hello3.png" %} />
                         </div>
                     </div>
@@ -87,21 +84,21 @@
 
                     <div class="panel-heading"><strong>Upload Image</strong> <small> </small></div>
 
-                    <form>
+                    <form method="POST" enctype="multipart/form-data">
                         <div class="panel-body">
 
                             <div class="input-group image-preview">
-                                <input placeholder="" name="file" type="text" class="form-control image-preview-filename" disabled="disabled">
+                                {% comment %} <input placeholder="" name="file" type="text" class="form-control image-preview-filename" disabled="disabled"> {% endcomment %}
                                 <!-- don't give a name === doesn't send on POST/GET -->
                                 <span class="input-group-btn"> 
                             <!-- image-preview-clear button -->
                             <button type="button" class="btn btn-default image-preview-clear" style="display:none;"> <span class="glyphicon glyphicon-remove"></span>                                Clear </button>
                                 <!-- image-preview-input -->
                                 <div class="btn btn-default image-preview-input"> <span class="glyphicon glyphicon-folder-open"></span> <span class="image-preview-input-title">Browse</span>
-                                    <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview" />
+                                    <input type="file" class='form-control' accept="image/png, image/jpeg, image/gif" name="file" />
                                     <!-- rename it -->
                                 </div>
-                                <button type="button" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button>
+                                {% comment %} <button type="submit" class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-upload"></i> </span>Upload</button> {% endcomment %}
                                 </span>
 
                             </div>
